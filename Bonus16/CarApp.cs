@@ -8,10 +8,10 @@ namespace Bonus16
 {
     public class CarApp
     {
-        List<Car> Cars = new List<Car>();
-        public void carInfo()
+        List<Car> Cars = new List<Car>();//list of cars
+        public void carInfo()//constructor of car info
         {
-
+            //declaring my varibles
             int numberOfCars = 0;
             int year = 0;
             double price = 0;
@@ -26,7 +26,7 @@ namespace Bonus16
 
                 Console.WriteLine("Please enter the model.");
                 model = Console.ReadLine();
-
+                //getting my input
                 Console.WriteLine("Please enter the year.");
                 year = int.Parse(Console.ReadLine());
 
@@ -39,7 +39,7 @@ namespace Bonus16
         {
             Console.WriteLine($"\tMake\tModel\tYear\tPrice");
             Console.WriteLine();
-            foreach (Car car in Cars)
+            foreach (Car car in Cars)//displaying my cars in a format
             {
                 Console.WriteLine(car.ToString());
             }
